@@ -65,8 +65,8 @@ Find entity classnames that start with "weapon_" as a starting point for creatin
         "filtername"        "" //filtername that the items filter entity uses (if applicable, see below)
         "hasfiltername"     "" //true if the item uses a filter entity to check the user, false otherwise
         "blockpickup"       "" //always false
-        "allowtransfer"     "" //true for human items, false for zm items
-        "forcedrop"         "" //true for human items, false for zm items
+        "allowtransfer"     "" //true for pistol items, false for knife items
+        "forcedrop"         "" //true for pistol items, false for knife items
         "chat"              "" //always true
         "hud"               "" //always true
         "hammerid"          "" //hammerid of the weapon_ entity for the item
@@ -74,6 +74,8 @@ Find entity classnames that start with "weapon_" as a starting point for creatin
         "maxuses"           "" //max uses of the item (if applicable)
         "cooldown"          "" //cooldown of the item (if applicable)
         "maxamount"         "" //how many instances of this item can exist
+        "physbox"           "" //OPTIONAL: "true" if this item is a physbox so it would allow bullets/knife to shoot/knife through. If it's false, dont bother adding this line.
+        "trigger"           "" //OPTIONAL: hammerid of the trigger that gives a player the item if one exists
     }
 }
 ```
